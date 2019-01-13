@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>/public/</loc>
     <lastmod>2019-01-13T13:23:59+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/ecmascript/</loc>
+    <loc>/public/ecmascript/</loc>
     <lastmod>2019-01-13T13:02:45+08:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/public/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/ecmascript/summary/</loc>
+    <loc>/public/ecmascript/summary/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/public/tags/</loc>
     <priority>0</priority>
   </url>
   

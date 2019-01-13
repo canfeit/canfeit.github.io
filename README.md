@@ -1,2 +1,5 @@
-# canfeit.github.io
+# Blog by Hugo
+## build
+```bash
 hugo --baseUrl="/public"
+```
