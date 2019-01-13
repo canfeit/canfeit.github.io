@@ -1,0 +1,46 @@
+	<head><meta charset="utf-8"></head>
+
+	<link rel="stylesheet" href="/public/revealjs/css/reveal.css">
+	<link rel="stylesheet" href="/public/revealjs/css/theme/league.css" id="theme">
+	<link rel="stylesheet" href="/public/revealjs/lib/css/zenburn.css">
+
+	<div class="reveal">
+	<div class="slides">
+	<section data-markdown
+	         data-separator="^---"
+		 data-separator-vertical="^___"
+		 data-separator-notes="^Note:">
+	
+	</section>
+	</div>
+	</div>
+	<script src="/public/revealjs/lib/js/head.min.js"></script>
+	<script src="/public/revealjs/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+		      	embedded : true,
+
+		        
+		        "center": true ,
+		        
+		        "controls": true ,
+		        
+		        "history": true ,
+		        
+		        "progress": true ,
+		        
+		        "transition":"concave",
+		        
+		        
+		        
+		        dependencies: [
+		          { src: '\/public\/revealjs\/lib\/js\/classList.js"', condition: function() { return !document.body.classList; } },
+		          { src: '\/public\/revealjs\/plugin\/markdown\/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		          { src: '\/public\/revealjs\/plugin\/markdown\/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+		          { src: '\/public\/revealjs\/plugin\/highlight\/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+		          { src: '\/public\/revealjs\/plugin\/zoom-js\/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+		          { src: '\/public\/revealjs\/plugin\/notes\/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+		          { src: '\/public\/revealjs\/plugin\/math\/math.js', async: true}
+		        ]
+		      });
+	</script>
