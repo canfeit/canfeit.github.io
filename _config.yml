@@ -1,4 +1,11 @@
+title: 灿飞的小站
+description: 灿飞的小站
 remote_theme: mmistakes/minimal-mistakes
 plugins:
 #   - jekyll-paginate
   - jekyll-include-cache
+links:
+  - title: Home
+    url: /
+  - title: iBlog
+    url: /iblog
