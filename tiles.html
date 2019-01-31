@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="The most popular HTML, CSS, and JS library in Metro style."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JS, Metro, CSS3, Javascript, HTML5, UI, Library, Web, Development, Framework"
+    />
+    <link
+      href="https://cdn.bootcss.com/metro/4.2.34/css/metro-all.min.css"
+      rel="stylesheet"
+    />
+    <link href="tiles.css" rel="stylesheet" />
+    <title>My Blog</title>
+  </head>
+  <body class="bg-dark fg-white h-vh-100 m4-cloak">
+    <div class="container-fluid start-screen h-100">
+      <h1 class="start-screen-title">My Blog</h1>
+      <div class="tiles-area clear">
+        <wired-card elevation="5">
+          <div
+            class="tiles-grid tiles-group size-2 fg-white"
+            data-group-title="iTech"
+          >
+            <div data-role="tile" class="bg-orange fg-white" data-size="wide">
+              <span class="mif-chrome icon"></span>
+              <span class="branding-bar">Chrome</span>
+            </div>
+            <div data-role="tile" data-size="small">
+              <span class="mif-apple icon"></span>
+            </div>
+            <div data-role="tile" data-size="small" class="bg-red fg-white">
+              <span class="mif-bell icon"></span>
+            </div>
+            <div
+              data-role="tile"
+              data-size="small"
+              class="bg-teal fg-white col-1 row-4"
+            >
+              <span class="mif-windows icon"></span>
+            </div>
+            <div
+              data-role="tile"
+              data-size="small"
+              class="bg-brown col-2 row-4"
+            >
+              <img src="../../images/outlook.png" class="icon" />
+            </div>
+            <a
+              href="https://github.com/olton/Metro-UI-CSS"
+              data-role="tile"
+              class="bg-indigo fg-white"
+            >
+              <span class="mif-github icon"></span>
+              <span class="branding-bar">Github</span>
+              <span class="badge-bottom">30</span>
+            </a>
+          </div>
+        </wired-card>
+        <wired-card elevation="5">
+          <div
+            class="tiles-grid tiles-group size-2 fg-white"
+            data-group-title="iLearn"
+          >
+            <div data-role="tile" data-cover="../../images/me.jpg">
+              <span class="branding-bar">Sergey Pimenov</span>
+            </div>
+            <div
+              data-role="tile"
+              data-effect="animate-fade"
+              data-effect-duration="1000"
+            >
+              <div class="slide" data-cover="../../images/me2.jpg"></div>
+              <div class="slide" data-cover="../../images/me.jpg"></div>
+              <div class="slide" data-cover="../../images/me3.jpg"></div>
+              <span class="branding-bar">Gallery</span>
+            </div>
+            <div data-role="tile" data-size="wide" data-effect="image-set">
+              <img src="../../images/jeki_chan.jpg" />
+              <img src="../../images/shvarcenegger.jpg" />
+              <img src="../../images/vin_d.jpg" />
+              <img src="../../images/jolie.jpg" />
+              <img src="../../images/jek_vorobey.jpg" />
+            </div>
+          </div>
+        </wired-card>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/metro/4.2.34/js/metro.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/wired-elements@latest/dist/wired-elements.bundled.min.js"
+    ></script>
+    <script src="tiles.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  </body>
+</html>
