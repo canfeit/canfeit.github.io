@@ -30,12 +30,11 @@
 
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/metro/4.2.34/js/metro.min.js"></script>
-    <script src="desktop.js"></script>
     <script>
       var w_icons = ["rocket", "apps", "cog", "anchor"];
       var w_titles = ["rocket", "apps", "cog", "anchor"];
         var index = Metro.utils.random(0, 3);
-        Desktop.createWindow({
+      $(".window-area").window({
           width: 300,
           icon: "<span class='mif-" + w_icons[index] + "'></span>",
           title: w_titles[index],
@@ -48,7 +47,7 @@
     onDragStart : function(pos, el) { },
     onDragStop : function(pos, el) { },
 onWindowDestroy : function(win){}
-        })
+        }).data("window")
     </script>
   </body>
 </html>
