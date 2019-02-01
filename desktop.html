@@ -26,28 +26,6 @@
   <body>
     <div class="desktop">
       <div class="window-area bg-dark"></div>
-      <div class="task-bar">
-        <div class="task-bar-section">
-          <button class="task-bar-item" id="start-menu-toggle">
-            <span class="mif-windows"></span>
-          </button>
-          <div
-            class="start-menu"
-            data-role="dropdown"
-            data-toggle-element="#start-menu-toggle"
-          >
-            <div class="start-menu-inner h-100">
-              <div class="explorer">
-                <ul class="v-menu w-100 bg-brandColor2 fg-white">
-                  <li><a onclick="createWindow()">New window</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="task-bar-section tasks"></div>
-      </div>
     </div>
 
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
@@ -66,12 +44,8 @@
           clsContent: "bg-dark",
           content:
             "<div class='p-2'>This is desktop demo created with Metro 4 Components Library</div>",
-          onShow: function(win) {
-            win.addClass("ani-swoopInTop");
-          },
-          onClose: function(win) {
-            win.addClass("ani-swoopOutTop");
-          }
+          onShow: function(win){},
+          onClose: function(win) {}
         });
       }
     </script>
