@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="author" content="Sergey Pimenov" />
+    <meta
+      name="description"
+      content="The most popular HTML, CSS, and JS library in Metro style."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JS, Metro, CSS3, Javascript, HTML5, UI, Library, Web, Development, Framework"
+    />
+    <link
+      href="https://cdn.bootcss.com/metro/4.2.34/css/metro-all.min.css"
+      rel="stylesheet"
+    />
+    <link href="descktop.css" rel="stylesheet" />
+
+    <title>Desktop demo - Metro 4 :: Popular HTML, CSS and JS library</title>
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="window-area bg-dark"></div>
+      <div class="task-bar">
+        <div class="task-bar-section">
+          <button class="task-bar-item" id="start-menu-toggle">
+            <span class="mif-windows"></span>
+          </button>
+          <div
+            class="start-menu"
+            data-role="dropdown"
+            data-toggle-element="#start-menu-toggle"
+          >
+            <div class="start-menu-inner h-100">
+              <div class="explorer">
+                <ul class="v-menu w-100 bg-brandColor2 fg-white">
+                  <li><a onclick="createWindow()">New window</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-bar-section tasks"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/metro/4.2.34/js/metro.min.js"></script>
+    <script src="desktop.js"></script>
+    <script>
+      var w_icons = ["rocket", "apps", "cog", "anchor"];
+      var w_titles = ["rocket", "apps", "cog", "anchor"];
+      function createWindow() {
+        var index = Metro.utils.random(0, 3);
+        Desktop.createWindow({
+          width: 300,
+          icon: "<span class='mif-" + w_icons[index] + "'></span>",
+          title: w_titles[index],
+          place: "center",
+          clsContent: "bg-dark",
+          content:
+            "<div class='p-2'>This is desktop demo created with Metro 4 Components Library</div>",
+          onShow: function(win) {
+            win.addClass("ani-swoopInTop");
+          },
+          onClose: function(win) {
+            win.addClass("ani-swoopOutTop");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
