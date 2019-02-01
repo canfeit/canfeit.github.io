@@ -34,7 +34,6 @@
     <script>
       var w_icons = ["rocket", "apps", "cog", "anchor"];
       var w_titles = ["rocket", "apps", "cog", "anchor"];
-      function createWindow() {
         var index = Metro.utils.random(0, 3);
         Desktop.createWindow({
           width: 300,
@@ -46,8 +45,7 @@
             "<div class='p-2'>This is desktop demo created with Metro 4 Components Library</div>",
           onShow: function(win){},
           onClose: function(win) {}
-        });
-      }
+        })
     </script>
   </body>
 </html>
