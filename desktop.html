@@ -24,30 +24,29 @@
     <title>Desktop demo - Metro 4 :: Popular HTML, CSS and JS library</title>
   </head>
   <body>
-    <div class="desktop">
-      <div class="window-area bg-dark"></div>
-    </div>
+    <div class="desktop"><div class="window-area bg-dark"></div></div>
 
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/metro/4.2.34/js/metro.min.js"></script>
     <script>
-      var w_icons = ["rocket", "apps", "cog", "anchor"];
-      var w_titles = ["rocket", "apps", "cog", "anchor"];
-        var index = Metro.utils.random(0, 3);
-      $(".window-area").window({
+      var w_icons = (w_titles = ["rocket", "apps", "cog", "anchor"]);
+      var index = Metro.utils.random(0, 3);
+      $(".window-area")
+        .window({
           width: 300,
           icon: "<span class='mif-" + w_icons[index] + "'></span>",
           title: w_titles[index],
           place: "center",
-          clsContent: "bg-dark",
+          //   clsContent: "bg-dark",
           content:
             "<div class='p-2'>This is desktop demo created with Metro 4 Components Library</div>",
-          onShow: function(win){},
+          onShow: function(win) {},
           onClose: function(win) {},
-    onDragStart : function(pos, el) { },
-    onDragStop : function(pos, el) { },
-onWindowDestroy : function(win){}
-        }).data("window")
+          onDragStart: function(pos, el) {},
+          onDragStop: function(pos, el) {},
+          onWindowDestroy: function(win) {}
+        })
+        .data("window");
     </script>
   </body>
 </html>
