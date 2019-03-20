@@ -4,6 +4,10 @@
 
 `git clone --recursive git@github.com:canfeit/canfeit.github.io.git`
 
+## Start
+
+`hugo server -D`
+
 ## build
 
 ```bash
