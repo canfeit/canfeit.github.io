@@ -31,16 +31,16 @@ commander.js
 hexo
 ghost
 pomelo
-node-red
+node-red/homebridge
 数据库
 TensorFlow.js
 vertx
 嫁接 c 生态(opencv)
 几个 api
-officeonline(石墨文档)
+officeonline(石墨文档)/monaco-editor
 webtorrent/ipfs(p2p 通信)
 windows95/nodeos
-
+tesseract.js OCR
 node 基础
 node 模块与 es6 模块
 异步随处可见与 epool 和 iocp
