@@ -36,6 +36,7 @@ node-red/homebridge
 TensorFlow.js
 vertx
 嫁接 c 生态(opencv)
+Web爬虫：Cheerio/Request
 几个 api
 officeonline(石墨文档)/monaco-editor
 webtorrent/ipfs(p2p 通信)
