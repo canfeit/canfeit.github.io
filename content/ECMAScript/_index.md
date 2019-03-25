@@ -26,6 +26,7 @@ node 生态与应用场景
 node 历史:node.exe/docker 节点/微服务,npm
 koa/meteor electron/vscode 前端构建/服务端渲染(node/npm react...) node browser electron/nwjs 架构图
 puppeteer
+serverless
 socket.io
 commander.js
 hexo
@@ -51,6 +52,22 @@ npm 的问题
 node 黑客的犯罪成本
 activex 和 applet 安全问题
 如果你在电脑上安装了一个 electron 开发的百度软件,那你的电脑 100%是要完蛋了
+
+函数
+
+getter
+
+关于原型继承，请记住以下四点：
+
+类属性用 this 界定
+
+类方法使用 prototype 对象界定
+
+继承属性，请使用 call 函数传递 this 对象
+
+继承方法，请使用 Object.create 连接父类和子类的原型
+
+始终将子类构造函数设置为自身，以获取对象的正确标识
 
 onclick = changeImg(this) vs onclick = changeImg(event)
 
