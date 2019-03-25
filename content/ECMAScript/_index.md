@@ -23,7 +23,9 @@ js 基础
 js 与 java
 
 node 生态与应用场景
-node 历史:node.exe/docker 节点/微服务,npm
+node 历史:node.exe 节点/微服务
+nest 微服务 https://img.shields.io/github/stars/nestjs/nest.svg
+npm 前后端仓库
 koa/meteor electron/vscode 前端构建/服务端渲染(node/npm react...) node browser electron/nwjs 架构图
 puppeteer
 serverless
@@ -37,22 +39,30 @@ node-red/homebridge
 TensorFlow.js
 vertx
 嫁接 c 生态(opencv)
-Web爬虫：Cheerio/Request
+Web 爬虫：Cheerio/Request
 几个 api
 officeonline(石墨文档)/monaco-editor
 webtorrent/ipfs(p2p 通信)
 windows95/nodeos
 tesseract.js OCR
+
 node 基础
 node 模块与 es6 模块
 异步随处可见与 epool 和 iocp
+gulp/webpack
 
 单线程的优缺点与 rust 和 c
 
 npm 的问题
+已经被彻底淘汰的服务端开发技术?
+比如 asp?
+前端
+Java applet /activex /flash,三方不可控,安全得不到保证
+js 存活因为被严格束缚在浏览器,两方可控
 node 黑客的犯罪成本
 activex 和 applet 安全问题
 如果你在电脑上安装了一个 electron 开发的百度软件,那你的电脑 100%是要完蛋了
+以极大的包容抑制分裂
 
 函数
 
@@ -119,3 +129,32 @@ addEventListener(
   true
 );
 ```
+
+node 膨胀了需要降降温
+https://infoq.cn/article/why-oppose-Node
+https://blog.fundebug.com/2017/06/12/nodejs-best-enterprise-examples/
+静态服务器+nginx，虽然 Nodejs 的优势在 IO 密集集应用，但是和 Nginx 的处理静态资源还是有很大的差距。
+cpu 密集+rust/c
+
+前后端博弈
+
+1. 复杂系统后端任务量大,进度滞后,前后端相互制约
+2. 前端无法控制数据格式和通信方式,存在性能问题
+3. 如果视图层在后端,前端写静态 demo，后端翻译成后端视图?
+4. 如果视图层在前端,接口问题前后端沟通成本高,业务逻辑成为灰色地带,前后端从来没有真正解耦
+5. 无法良好的支持跨终端
+6. seo?
+7. M-V-C 每一层都可能出现别的层的代码，日积月累，完全没有维护性可言。
+   三层架构从物理层次上保证了你不可能这么做。
+   结果:
+   没有银弹,两层变三层,牺牲通信性能损耗换让职责清晰、方便协作，提高整体开发效率
+   多加一层就多一层风险，
+   前端:负责 View
+   中端 node: Controller 层,接口设计,代理请求处理,做服务端渲染
+   后端 java:只负责 Model 层，业务处理/数据等
+
+为什么不统一用 node？
+
+1. 我们的初衷是做前后端分离，如果考虑这个问题就有点违背我们的初衷了。
+2. 是累死前端还是逼死后端?
+   结论:暂时没必要
