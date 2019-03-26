@@ -10,3 +10,5 @@ title: "es与js及其运行环境"
 
 useragent 和 activex 桌面应用 对于 ie 的决定性意义
 反垄断被解散 at&t
+node browser electron/nwjs 架构图
+几个 api

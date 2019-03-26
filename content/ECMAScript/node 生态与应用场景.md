@@ -32,34 +32,36 @@ Oracle 公司收购 Sun 公司之后，csdn 旗下著名的 Javaeye 论坛被迫
 事件的结局没有大家想的那么坏，koa-router 最后由一位名为 ZijianHe 的开发者接手，ZijianHe 的个人简介称自己是全栈开发者，在过去几年中为私人项目做过上百次贡献。不过，作者最后没有披露这是正常的权限转移还是金钱交易的结果。
 
 Jeff Atwood 曾提出“任何能够用 JavaScript 实现的应用，最终都必将用 JavaScript 实现”
-node.exe 节点/微服务
-nest 微服务 https://img.shields.io/github/stars/nestjs/nest.svg
-npm 前后端仓库
-koa/meteor electron/vscode 前端构建/服务端渲染(node/npm react...) node browser electron/nwjs 架构图
-puppeteer
-serverless
-socket.io
-commander.js
-hexo
-ghost
-pomelo
-node-red/homebridge
-数据库
-TensorFlow.js
-vertx
-嫁接 c 生态(opencv)
-Web 爬虫：Cheerio/Request
-几个 api
-officeonline(石墨文档)/monaco-editor
-webtorrent/ipfs/peerjs(p2p 通信)
-windows95/nodeos
-tesseract.js OCR
-meteor
-https://github.com/pando-project/iotjs
-https://github.com/pando-project/jerryscript 树莓派
-https://github.com/espruino/Espruino
-https://github.com/hybridgroup/cylon
-https://github.com/confluentinc/kafka-rest
-https://github.com/mqttjs/MQTT.js
-wasm
-https://github.com/apache/incubator-superset实时数据看板
+
+- 前端
+- [nest](https://github.com/nestjs/nest) 微服务![](https://img.shields.io/github/stars/nestjs/nest.svg)
+- [yarn](https://github.com/yarnpkg/yarn) 前后端仓库![](https://img.shields.io/github/stars/yarnpkg/yarn.svg)
+- [meteor](https://github.com/meteor/meteor)全栈![](https://img.shields.io/github/stars/meteor/meteor.svg)
+- [express](https://github.com/expressjs/express)Web 服务![](https://img.shields.io/github/stars/expressjs/express.svg)
+- [electron](https://github.com/electron/electron)跨平台桌面应用开发![](https://img.shields.io/github/stars/electron/electron.svg)
+- [vscode](https://github.com/Microsoft/vscode)代码编辑器![](https://img.shields.io/github/stars/Microsoft/vscode.svg)
+- [webpack](https://github.com/Microsoft/vscode)前端打包编译![](https://img.shields.io/github/stars/Microsoft/vscode.svg)
+- [gulp](https://github.com/gulpjs/gulp)流式自动化构建![](https://img.shields.io/github/stars/gulpjs/gulp.svg)
+- [puppeteer](https://github.com/GoogleChrome/puppeteer)自动化 UI 测试![](https://img.shields.io/github/stars/GoogleChrome/puppeteer.svg)
+- [serverless](https://github.com/serverless/serverless)![](https://img.shields.io/github/stars/serverless/serverless.svg)
+- [socket.io](https://github.com/socketio/socket.io)![](https://img.shields.io/github/stars/socketio/socket.io.svg)
+- [commander.js](https://github.com/tj/commander.js)![](https://img.shields.io/github/stars/tj/commander.js.svg)
+- [ghost](https://github.com/TryGhost/Ghost)![](https://img.shields.io/github/stars/TryGhost/Ghost.svg)
+- [pomelo](https://github.com/NetEase/pomelo)![](https://img.shields.io/github/stars/NetEase/pomelo.svg)
+- [node-red](https://github.com/node-red/node-red)![](https://img.shields.io/github/stars/node-red/node-red.svg)
+- [homebridge](https://github.com/nfarina/homebridge)![](https://img.shields.io/github/stars/nfarina/homebridge.svg)
+- [mongodb](https://github.com/mongodb/mongo)![](https://img.shields.io/github/stars/mongodb/mongo.svg)
+- [TensorFlow](https://github.com/tensorflow/tensorflow)![](https://img.shields.io/github/stars/tensorflow/tensorflow.svg)
+- [vert.x](https://github.com/eclipse-vertx/vert.x)![](https://img.shields.io/github/stars/eclipse-vertx/vert.x.svg)
+- [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs)图像识别![](https://img.shields.io/github/stars/justadudewhohacks/opencv4nodejs.svg)
+- [webtorrent](https://github.com/webtorrent/webtorrent)P2P 流式传输![](https://img.shields.io/github/stars/webtorrent/webtorrent.svg)
+- [ipfs](https://github.com/ipfs/ipfs)P2P 分布式文件系统![](https://img.shields.io/github/stars/ipfs/ipfs.svg)
+- [windows95](https://github.com/felixrieseberg/windows95)![](https://img.shields.io/github/stars/felixrieseberg/windows95.svg)
+- [tesseract](https://github.com/tesseract-ocr/tesseract) OCR![](https://img.shields.io/github/stars/tesseract-ocr/tesseract.svg)
+- [johnny-five](https://github.com/rwaldron/johnny-five)![](https://img.shields.io/github/stars/rwaldron/johnny-five.svg)
+- [jerryscript](https://github.com/pando-project/jerryscript) 树莓派![](https://img.shields.io/github/stars/pando-project/jerryscript.svg)
+- [serialport](https://github.com/node-serialport/node-serialport)![](https://img.shields.io/github/stars/node-serialport/node-serialport.svg)
+- [MQTT](https://github.com/mqttjs/MQTT.js)![](https://img.shields.io/github/stars/mqttjs/MQTT.js.svg)
+- [assemblyscript](https://github.com/AssemblyScript/assemblyscript)![](https://img.shields.io/github/stars/AssemblyScript/assemblyscript.svg)
+- [Superset](https://github.com/apache/incubator-superset) 实时数据看板![](https://img.shields.io/github/stars/apache/incubator-superset.svg)
+- [石墨文档](https://shimo.im/)云端 office
