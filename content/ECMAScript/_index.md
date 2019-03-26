@@ -11,41 +11,6 @@ C -->|One| D[Result one]
 C -->|Two| E[Result two]
 {{< /mermaid >}}
 
-js es js 运行环境的关系
-js 历史:js 剥离环境 es, dom(事件冒泡) bom(运行环境 api settimeout) ,useragent 和 activex 桌面应用 对于 ie 的决定性意义
-反垄断被解散 at&t
-node 中的 js:es,事件, 运行环境 api
-
-js 基础
-执行栈与汇编语言
-原型链与作用域链
-
-js 与 java
-
-node 生态与应用场景
-node 历史:node.exe 节点/微服务
-nest 微服务 https://img.shields.io/github/stars/nestjs/nest.svg
-npm 前后端仓库
-koa/meteor electron/vscode 前端构建/服务端渲染(node/npm react...) node browser electron/nwjs 架构图
-puppeteer
-serverless
-socket.io
-commander.js
-hexo
-ghost
-pomelo
-node-red/homebridge
-数据库
-TensorFlow.js
-vertx
-嫁接 c 生态(opencv)
-Web 爬虫：Cheerio/Request
-几个 api
-officeonline(石墨文档)/monaco-editor
-webtorrent/ipfs(p2p 通信)
-windows95/nodeos
-tesseract.js OCR
-
 node 基础
 node 模块与 es6 模块
 异步随处可见与 epool 和 iocp
@@ -57,7 +22,7 @@ npm 的问题
 已经被彻底淘汰的服务端开发技术?
 比如 asp?
 前端
-Java applet /activex /flash,三方不可控,安全得不到保证
+Java applet /activex /Silverlight/flash/VBScript,三方不可控,安全得不到保证
 js 存活因为被严格束缚在浏览器,两方可控
 node 黑客的犯罪成本
 activex 和 applet 安全问题

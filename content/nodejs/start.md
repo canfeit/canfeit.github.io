@@ -50,3 +50,6 @@ node.js 中不可能在最外层定义变量，因为所有的用户代码都是
 node 启动流程,js 入口,global 绑定,repl 和 module 中 global 区别
 process 添加到 global
 加载执行 js 主入口 node.js,global 作为参数
+var args = [this.exports, require, this, filename, dirname];
+var result = compiledWrapper.apply(this.exports, args);
+由源码可知，JavaScript 文件运行的上下文环境是 module.exports，因此在文件中，也可以直接使用 this 导出对象。
