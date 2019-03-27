@@ -3,13 +3,17 @@ node 历史
 2008 年 v8
 2009 年 Ryan Dahl(ry) C/C++写高性能 Web 服务。对于高性能，异步 IO、事件驱动是基本原则，但是用 C/C++写就太痛苦了。于是这位仁兄开始设想用高级语言开发 Web 服务。他评估了很多种高级语言，发现很多语言虽然同时提供了同步 IO 和异步 IO，但是开发人员一旦用了同步 IO，他们就再也懒得写异步 IO 了，所以，最终，Ryan 瞄向了 JavaScript。
 因为 JavaScript 是单线程执行，根本不能进行同步 IO 操作，所以，JavaScript 的这一“缺陷”导致了它只能使用异步 IO,带著他的团队开发出了开源 Web 服务器项目“Web.js”,由于 Web.js 足够轻量,ry 认为应该把他打造成一个用于大型项目开发,一个 Web.js 节点提供一个服务,多个节点组成一个完整的项目,改名 node.js
-2010 年 npm,Joyent 收购 node
+2010 年 Joyent 收购 node,npm 发布
 2011 年 微软与 Joyent 合作帮助开发了原生的 Windows 版本的 Node.js
 2014 年 11 月 - nodejs 0.11 IO.js 项目创立
 2015 年 2 月 - IO.js 发布 3.0,Joyent 携手各大公司和 Linux 基金会成立 Node.js 基金会发布 node4.0
 2019 年 Node.js 基金会与 JS 基金会合并为 OpenJS 基金会
 
 node 历史续
+node 膨胀了需要降降温
+2014 年 由于 npm intall 奇慢，淘宝发布符合国情的 cnpm，结构与 npm 不兼容
+2015 年 npm3 发布,解决路径过长问题,扁平化设计与 npm2 不兼容
+2016 年 对 npm 无力吐槽的 Facebook 发布另一个包管理工具 yarn，结构与 npm 不兼容
 2016 年 kik@left-pad 事件 babel 和 react
 2018.4 APP 标题为“HTML5, CSS, JavaScript, HTML, Snippet Editor”，就是其中包含“JavaScript”而遭到下架，根据维基百科显示该商品权属于 Oracle 集团。而遭到苹果公司的下架处理，，美国商标注册号 2416017 的 JAVASCRIPT 为甲骨文公司所有，而这款包含“JavaScript”字样的 APP 并未得到甲骨文的授权。
 
@@ -64,3 +68,26 @@ Jeff Atwood 曾提出“任何能够用 JavaScript 实现的应用，最终都�
 - [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs)图像识别![](https://img.shields.io/github/stars/justadudewhohacks/opencv4nodejs.svg)
 - [jerryscript](https://github.com/pando-project/jerryscript) IoT 引擎![](https://img.shields.io/github/stars/pando-project/jerryscript.svg)
 - [石墨文档](https://shimo.im/)云端 office
+
+前后端博弈
+
+1. 复杂系统后端任务量大,进度滞后,前后端相互制约
+2. 前端无法控制数据格式和通信方式,存在性能问题
+3. 如果视图层在后端,前端写静态 demo，后端翻译成后端视图?
+4. 如果视图层在前端,接口问题前后端沟通成本高,业务逻辑成为灰色地带,前后端从来没有真正解耦
+5. 无法良好的支持跨终端
+6. seo?
+7. M-V-C 每一层都可能出现别的层的代码，日积月累，完全没有维护性可言。
+   三层架构从物理层次上保证了你不可能这么做。
+   结果:
+   没有银弹,两层变三层,牺牲通信性能损耗换让职责清晰、方便协作，提高整体开发效率
+   多加一层就多一层风险，
+   前端:负责 View
+   中端 node: Controller 层,接口设计,代理请求处理,做服务端渲染
+   后端 java:只负责 Model 层，业务处理/数据等
+
+为什么不统一用 node？
+
+1. 我们的初衷是做前后端分离，如果考虑这个问题就有点违背我们的初衷了。
+2. 是累死前端还是逼死后端?
+   结论:暂时没必要
