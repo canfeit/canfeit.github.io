@@ -53,3 +53,10 @@ process 添加到 global
 var args = [this.exports, require, this, filename, dirname];
 var result = compiledWrapper.apply(this.exports, args);
 由源码可知，JavaScript 文件运行的上下文环境是 module.exports，因此在文件中，也可以直接使用 this 导出对象。
+
+1. 如果给的是相对路径先拼出绝对路径
+1. 按照给定路径依次查找有{js,json,node}三个后缀之一的文件
+1. 查找目录有{index.js,index.json,index.node}三个后缀之一
+1. 查找目录中的 package.json 的 main
+   node 命令:不是路径当作相对路径
+   require:不是路径当作第三方包或本地模块
