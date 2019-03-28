@@ -11,11 +11,6 @@ C -->|One| D[Result one]
 C -->|Two| E[Result two]
 {{< /mermaid >}}
 
-node 基础
-node 模块与 es6 模块
-异步随处可见与 epool 和 iocp
-gulp/webpack
-
 单线程的优缺点与 rust 和 c
 
 npm 的问题
