@@ -28,46 +28,53 @@ Oracle 公司收购 Sun 公司之后，csdn 旗下著名的 Javaeye 论坛被迫
 这是一个非常受欢迎的 JavaScript 库，在 npm.org 存储库上每周下载量超过 200 万。恶意依赖已经存在了 2.5 个月内未被发现,期间已被下载 2225w 次,包括 Angular、Vue、Bootstrap、Gatsby,nodemon 等都在使用 event-stream
 2018.12 月 25 日，正当人们沉浸在节日的气氛中时，部分开发者突然发现他们开发的 Web 网页的界面发生了变化，按钮上方出现“积雪”，经过探索发现这是前端 UI 组件库 Ant Design（简称 antd）提前埋入一个未经声明的“彩蛋”，事件迅速发酵，引起了巨大争议。很多开发者表示愤怒与不满。尤其 Antd 大都企业级的是 2B 应用
 最开始，开发者以为是被黑客代码植入了，在反复检查之后才确定是代码中埋入了定时的“圣诞节彩蛋”。
-![](https://upload-images.jianshu.io/upload_images/2974893-699e66f80ccb9d3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600/format/webp)
-![](https://static.geekbang.org/infoq/5c221266ccc6a.png)
+
+<!-- ![](https://upload-images.jianshu.io/upload_images/2974893-699e66f80ccb9d3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600/format/webp) -->
+<!-- ![](https://static.geekbang.org/infoq/5c221266ccc6a.png) -->
+
 2019.1 koa 路由中间件 koa-router 项目被作者公开售卖，售价为 5000 美元，koa-router 在过去一年中，周平均下载量超过 10W，开发者担心如果作者将其售卖给一些黑客，可能会让 event-stream 事件 重演，后果不堪设想。koa 团队也参照 egg 团队的做法，fork 一份，让社区一起来维护。
 2019.1 Rust 创始人谈 Rust 2019 和未来：社区应限制成长速度
 
 事件的结局没有大家想的那么坏，koa-router 最后由一位名为 ZijianHe 的开发者接手，ZijianHe 的个人简介称自己是全栈开发者，在过去几年中为私人项目做过上百次贡献。不过，作者最后没有披露这是正常的权限转移还是金钱交易的结果。
 
 Jeff Atwood 曾提出“任何能够用 JavaScript 实现的应用，最终都必将用 JavaScript 实现”
+| [1](https://zcfy.cc/article/node-js-examples-how-enterprises-use-node-in-2016) | | |
 
-- [TensorFlow](https://github.com/tensorflow/tensorflow)机器学习![](https://img.shields.io/github/stars/tensorflow/tensorflow.svg)
-- [vscode](https://github.com/Microsoft/vscode)代码编辑器![](https://img.shields.io/github/stars/Microsoft/vscode.svg)
-- [webpack](https://github.com/Microsoft/vscode)前端打包编译![](https://img.shields.io/github/stars/Microsoft/vscode.svg)
-- [electron](https://github.com/electron/electron)跨平台桌面应用开发![](https://img.shields.io/github/stars/electron/electron.svg)
-- [puppeteer](https://github.com/GoogleChrome/puppeteer)自动化 UI 测试![](https://img.shields.io/github/stars/GoogleChrome/puppeteer.svg)
-- [socket.io](https://github.com/socketio/socket.io)实时双向通信![](https://img.shields.io/github/stars/socketio/socket.io.svg)
-- [express](https://github.com/expressjs/express)Web 服务![](https://img.shields.io/github/stars/expressjs/express.svg)
-- [meteor](https://github.com/meteor/meteor)全栈开发平台![](https://img.shields.io/github/stars/meteor/meteor.svg)
-- [yarn](https://github.com/yarnpkg/yarn) 前后端仓库![](https://img.shields.io/github/stars/yarnpkg/yarn.svg)
-- [gulp](https://github.com/gulpjs/gulp)流式自动化构建![](https://img.shields.io/github/stars/gulpjs/gulp.svg)
-- [ghost](https://github.com/TryGhost/Ghost)CMS 建站![](https://img.shields.io/github/stars/TryGhost/Ghost.svg)
-- [serverless](https://github.com/serverless/serverless)无服务器架构![](https://img.shields.io/github/stars/serverless/serverless.svg)
-- [tesseract](https://github.com/tesseract-ocr/tesseract) OCR![](https://img.shields.io/github/stars/tesseract-ocr/tesseract.svg)
-- [Superset](https://github.com/apache/incubator-superset) 实时数据看板![](https://img.shields.io/github/stars/apache/incubator-superset.svg)
-- [webtorrent](https://github.com/webtorrent/webtorrent)P2P 流式传输![](https://img.shields.io/github/stars/webtorrent/webtorrent.svg)
-- [ipfs](https://github.com/ipfs/ipfs)P2P 分布式文件系统![](https://img.shields.io/github/stars/ipfs/ipfs.svg)
-- [mongodb](https://github.com/mongodb/mongo)数据库![](https://img.shields.io/github/stars/mongodb/mongo.svg)
-- [windows95](https://github.com/felixrieseberg/windows95)操作系统![](https://img.shields.io/github/stars/felixrieseberg/windows95.svg)
-- [commander.js](https://github.com/tj/commander.js)命令行工具开发![](https://img.shields.io/github/stars/tj/commander.js.svg)
-- [nest](https://github.com/nestjs/nest) 微服务![](https://img.shields.io/github/stars/nestjs/nest.svg)
-- [homebridge](https://github.com/nfarina/homebridge)智能家庭![](https://img.shields.io/github/stars/nfarina/homebridge.svg)
-- [pomelo](https://github.com/NetEase/pomelo)游戏服务引擎![](https://img.shields.io/github/stars/NetEase/pomelo.svg)
-- [johnny-five](https://github.com/rwaldron/johnny-five)IoT 开发![](https://img.shields.io/github/stars/rwaldron/johnny-five.svg)
-- [vert.x](https://github.com/eclipse-vertx/vert.x)异步服务框架![](https://img.shields.io/github/stars/eclipse-vertx/vert.x.svg)
-- [node-red](https://github.com/node-red/node-red)IoT 可视化![](https://img.shields.io/github/stars/node-red/node-red.svg)
-- [assemblyscript](https://github.com/AssemblyScript/assemblyscript)Web 汇编语言![](https://img.shields.io/github/stars/AssemblyScript/assemblyscript.svg)
-- [serialport](https://github.com/node-serialport/node-serialport)机器人开发![](https://img.shields.io/github/stars/node-serialport/node-serialport.svg)
-- [MQTT](https://github.com/mqttjs/MQTT.js)MQTT![](https://img.shields.io/github/stars/mqttjs/MQTT.js.svg)
-- [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs)图像识别![](https://img.shields.io/github/stars/justadudewhohacks/opencv4nodejs.svg)
-- [jerryscript](https://github.com/pando-project/jerryscript) IoT 引擎![](https://img.shields.io/github/stars/pando-project/jerryscript.svg)
-- [石墨文档](https://shimo.im/)云端 office
+|                                                                           |                    |                                                                              |
+| ------------------------------------------------------------------------- | ------------------ | ---------------------------------------------------------------------------- |
+| [石墨文档](https://shimo.im/)                                             | 云端 office        |                                                                              |
+| 阿里巴巴                                                                  | 中间层             |                                                                              |
+| [](https://blog.fundebug.com/2017/06/12/nodejs-best-enterprise-examples/) |                    |                                                                              |
+| [应用](https://www.quora.com/Which-companies-use-Node-js-1)               |                    |                                                                              |
+| [应用](https://naturaily.com/blog/node-js-applications)                   |                    |                                                                              |
+| [vscode](https://github.com/Microsoft/vscode)                             | 代码编辑器         | ![](https://img.shields.io/github/stars/Microsoft/vscode.svg)                |
+| [webpack](https://github.com/Microsoft/vscode)                            | 前端打包编译       | ![](https://img.shields.io/github/stars/Microsoft/vscode.svg)                |
+| [electron](https://github.com/electron/electron)                          | 跨平台桌面应用开发 | ![](https://img.shields.io/github/stars/electron/electron.svg)               |
+| [puppeteer](https://github.com/GoogleChrome/puppeteer)                    | 自动化 UI 测试     | ![](https://img.shields.io/github/stars/GoogleChrome/puppeteer.svg)          |
+| [socket.io](https://github.com/socketio/socket.io)                        | IM 实时双向通信    | ![](https://img.shields.io/github/stars/socketio/socket.io.svg)              |
+| [express](https://github.com/expressjs/express)                           | Web 服务           | ![](https://img.shields.io/github/stars/expressjs/express.svg)               |
+| [meteor](https://github.com/meteor/meteor)                                | 全栈开发平台       | ![](https://img.shields.io/github/stars/meteor/meteor.svg)                   |
+| [yarn](https://github.com/yarnpkg/yarn)                                   | 前后端仓库         | ![](https://img.shields.io/github/stars/yarnpkg/yarn.svg)                    |
+| [gulp](https://github.com/gulpjs/gulp)                                    | 流式自动化构建     | ![](https://img.shields.io/github/stars/gulpjs/gulp.svg)                     |
+| [ghost](https://github.com/TryGhost/Ghost)                                | CMS 建站           | ![](https://img.shields.io/github/stars/TryGhost/Ghost.svg)                  |
+| [serverless](https://github.com/serverless/serverless)                    | 无服务器架构       | ![](https://img.shields.io/github/stars/serverless/serverless.svg)           |
+| [tesseract](https://github.com/naptha/tesseract.js)                       | OCR                | ![](https://img.shields.io/github/stars/naptha/tesseract.js.svg)             |
+| [webtorrent](https://github.com/webtorrent/webtorrent)                    | P2P 流式传输       | ![](https://img.shields.io/github/stars/webtorrent/webtorrent.svg)           |
+| [ipfs](https://github.com/ipfs/ipfs)                                      | P2P 分布式文件系统 | ![](https://img.shields.io/github/stars/ipfs/ipfs.svg)                       |
+| [mongodb](https://github.com/mongodb/mongo)                               | 数据库             | ![](https://img.shields.io/github/stars/mongodb/mongo.svg)                   |
+| [windows95](https://github.com/felixrieseberg/windows95)                  | 操作系统           | ![](https://img.shields.io/github/stars/felixrieseberg/windows95.svg)        |
+| [commander.js](https://github.com/tj/commander.js)                        | 命令行工具开发     | ![](https://img.shields.io/github/stars/tj/commander.js.svg)                 |
+| [nest](https://github.com/nestjs/nest)                                    | 微服务             | ![](https://img.shields.io/github/stars/nestjs/nest.svg)                     |
+| [homebridge](https://github.com/nfarina/homebridge)                       | 智能家庭           | ![](https://img.shields.io/github/stars/nfarina/homebridge.svg)              |
+| [TensorFlow](https://github.com/tensorflow/tfjs)                          | 机器学习           | ![](https://img.shields.io/github/stars/tensorflow/tfjs.svg)                 |
+| [johnny-five](https://github.com/rwaldron/johnny-five)                    | IoT 开发           | ![](https://img.shields.io/github/stars/rwaldron/johnny-five.svg)            |
+| [vert.x](https://github.com/eclipse-vertx/vert.x)                         | 异步服务框架       | ![](https://img.shields.io/github/stars/eclipse-vertx/vert.x.svg)            |
+| [node-red](https://github.com/node-red/node-red)                          | IoT 可视化         | ![](https://img.shields.io/github/stars/node-red/node-red.svg)               |
+| [assemblyscript](https://github.com/AssemblyScript/assemblyscript)        | Web 汇编语言       | ![](https://img.shields.io/github/stars/AssemblyScript/assemblyscript.svg)   |
+| [serialport](https://github.com/node-serialport/node-serialport)          | 机器人开发         | ![](https://img.shields.io/github/stars/node-serialport/node-serialport.svg) |
+| [MQTT](https://github.com/mqttjs/MQTT.js)                                 | MQTT               | ![](https://img.shields.io/github/stars/mqttjs/MQTT.js.svg)                  |
+| [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs)       | 图像识别           | ![](https://img.shields.io/github/stars/justadudewhohacks/opencv4nodejs.svg) |
+| [jerryscript](https://github.com/pando-project/jerryscript)               | IoT 引擎           | ![](https://img.shields.io/github/stars/pando-project/jerryscript.svg)       |
 
 前后端博弈
 
