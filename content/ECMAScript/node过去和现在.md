@@ -1,10 +1,10 @@
-## node 过去和现在
+## Node 过去和现在
 
 - 2008 年 v8 发布
-- 2009 年 Ryan Dahl(ry) 用 C 写高性能 Web 服务,开发出了开源 Web 服务器项目“Web.js”。对于高性能，异步 IO、事件驱动是基本原则.他评估了很多种高级语言，发现很多语言虽然同时提供了同步 IO 和异步 IO，但是开发人员一旦用了同步 IO，他们就再也懒得写异步 IO 了.最终，Ryan 瞄向了 JavaScript。JavaScript 是单线程执行，不能进行同步 IO 操作.ry 认为 Web.js 适合大型项目开发,一个 Web.js 作为一个节点提供服务,多个节点组成一个完整的服务,Web.js 改名 node.js
-- 2010 年 Joyent 收购 Node.js,npm 发布
+- 2009 年 Ryan Dahl(ry) 用 C 写高性能 Web 服务,开发出了开源 Web 服务器项目“Web.js”。对于高性能，异步 IO、事件驱动是基本原则.他评估了很多种高级语言，发现很多语言虽然同时提供了同步 IO 和异步 IO，但是开发人员一旦用了同步 IO，他们就再也懒得写异步 IO 了.最终，Ryan 瞄向了 JavaScript。JavaScript 是单线程执行，不能进行同步 IO 操作.ry 认为 Web.js 适合大型项目开发,一个 Web.js 作为一个节点提供服务,多个节点组成一个完整的服务,Web.js 改名 Node.js
+- 2010 年 Joyent 收购 Node.js,NPM 发布
 - 2011 年 微软与 Joyent 合作帮助开发了原生的 Windows 版本的 Node.js
-- 2014 年 11 月 nodejs 0.11 IO.js 项目创立
+- 2014 年 11 月 Node.js 0.11 IO.js 项目创立
 - 2015 年 2 月 IO.js 发布 3.0,Joyent 携手各大公司和 Linux 基金会成立 Node.js 基金会,发布 node4.0
 - 2019 年 Node.js 基金会与 JS 基金会合并为 OpenJS 基金会
 
@@ -22,12 +22,12 @@ Stack Overflow 创始人 Jeff Atwood 提出:
 | Netflix                                                             | 视频流服务                                                                                                    |
 | Ebay Node.js 替代 Java                                              | 为 1.7 亿用户提供实时服务                                                                                     |
 | Mozilla                                                             | 为百万用户提供服务,节省内存,提高开发效率                                                                      |
-| LinkedIn Node.js 替代 Ruby on Rails                                 | 服务器由 30 个减到 3 个 ,性能提高 20 倍                                                                       |
+| LinkedIn Node 替代 RoR                                              | 服务器由 30 个减到 3 个 ,性能提高 20 倍                                                                       |
 | 阿里巴巴                                                            | 中间层                                                                                                        |
-| [石墨文档](https://shimo.im/)                                       | 云端 office                                                                                                   |
-| [vscode](https://github.com/Microsoft/vscode)                       | 可扩展代码编辑器                                                                                              | ![](https://img.shields.io/github/stars/Microsoft/vscode.svg)                |
-| [webpack](https://github.com/Microsoft/vscode)                      | 前端打包编译                                                                                                  | ![](https://img.shields.io/github/stars/Microsoft/vscode.svg)                |
+| 初心科技[石墨文档](https://shimo.im/)                               | 云端 office                                                                                                   |
+| 微软[vscode](https://github.com/Microsoft/vscode)                   | 高效跨平台可扩展代码编辑器                                                                                    | ![](https://img.shields.io/github/stars/Microsoft/vscode.svg)                |
 | [electron](https://github.com/electron/electron)                    | 跨平台桌面应用开发                                                                                            | ![](https://img.shields.io/github/stars/electron/electron.svg)               |
+| [webpack](https://github.com/webpack/webpack)                       | 前端打包编译                                                                                                  | ![](https://img.shields.io/github/stars/webpack/webpack.svg)                 |
 | [puppeteer](https://github.com/GoogleChrome/puppeteer)              | 自动化 UI 测试                                                                                                | ![](https://img.shields.io/github/stars/GoogleChrome/puppeteer.svg)          |
 | [socket.io](https://github.com/socketio/socket.io)                  | IM 实时双向通信                                                                                               | ![](https://img.shields.io/github/stars/socketio/socket.io.svg)              |
 | [express](https://github.com/expressjs/express)                     | Web 服务                                                                                                      | ![](https://img.shields.io/github/stars/expressjs/express.svg)               |
@@ -54,25 +54,33 @@ Stack Overflow 创始人 Jeff Atwood 提出:
 | [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs) | 图像识别                                                                                                      | ![](https://img.shields.io/github/stars/justadudewhohacks/opencv4nodejs.svg) |
 | [jerryscript](https://github.com/pando-project/jerryscript)         | IoT 引擎                                                                                                      | ![](https://img.shields.io/github/stars/pando-project/jerryscript.svg)       |
 
-前后端博弈
+## 中间层架构
+
+### 前后端分离矛盾
 
 1. 复杂系统后端任务量大,进度滞后,前后端相互制约
 2. 前端无法控制数据格式和通信方式,存在性能问题
-3. 如果视图层在后端,前端写静态 demo，后端翻译成后端视图?
-4. 如果视图层在前端,接口问题前后端沟通成本高,业务逻辑成为灰色地带,前后端从来没有真正解耦
+3. 视图层在后端：前端写静态 demo，后端翻译成后端视图?
+4. 视图层在前端：接口问题前后端沟通成本高,业务逻辑成为灰色地带,前后端从来没有真正解耦
 5. 无法良好的支持跨终端
-6. seo?
-7. M-V-C 每一层都可能出现别的层的代码，日积月累，完全没有维护性可言。
-   三层架构从物理层次上保证了你不可能这么做。
-   结果:
-   没有银弹,两层变三层,牺牲通信性能损耗换让职责清晰、方便协作，提高整体开发效率
-   多加一层就多一层风险，
-   前端:负责 View
-   中端 node: Controller 层,接口设计,代理请求处理,做服务端渲染
-   后端 java:只负责 Model 层，业务处理/数据等
+6. SEO 问题
+7. M-V-C 每一层都可能出现别的层的代码，日积月累，完全没有维护性可言。三层架构从物理层次上保证了你不可能这么做。
 
-为什么不统一用 node？
+### 解决方案
+
+- 前端：负责 View 层
+- 中端：Node 负责 Controller 层,接口设计,代理请求处理,做服务端渲染
+- 后端：Java 只负责 Model 层业务处理/数据
+
+## 评估
+
+- 两层变三层,牺牲通信性能换职责清晰、方便协作，提高整体开发效率
+- 多加一层就多一层风险，需要做好防护
+
+<!-- 为什么不统一用 node？
 
 1. 我们的初衷是做前后端分离，如果考虑这个问题就有点违背我们的初衷了。
 2. 是累死前端还是逼死后端?
-   结论:暂时没必要
+   结论:暂时没必要 -->
+
+## [Node 全栈生态](https://blog.csdn.net/canfeit/article/details/82999393#Nodejs_104)
