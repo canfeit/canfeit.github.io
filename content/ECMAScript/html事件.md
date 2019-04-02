@@ -3,19 +3,21 @@ title: "html事件"
 ---
 
 - 事件是 JS 与 HTML 交互的桥梁。
-- addEventListener 事件处理包括捕获阶段、目标阶段和冒泡阶段
+- addEventListener 事件处理包括捕获阶段、目标阶段、冒泡阶段
 - 目标元素不区分捕获和冒泡阶段
   ![html事件](https://www.w3.org/TR/DOM-Level-3-Events/images/eventflow.svg)
-- addEventListener 中事件当前正在流过哪个元素，this 便指向哪个元素,currentTarget 总是和 this 相同，而 target 指向事实上被点击的目标 DOM。
-- on 事件处理发生在冒泡阶段,el.onclick 的本质是对 DOM 元素属性的赋值，同一元素相同事件只能 on 绑定一个事件处理函数，新绑定的事件处理函数会覆盖旧的事件处理函数。
+- addEventListener 中 this 指向事件当前正在流过的元素,currentTarget 总是和 this 相同，而 target 指向事实上被点击的目标 DOM 元素。
+- on 事件处理发生在冒泡阶段,el.onclick 的本质是对 DOM 元素属性的赋值，所以同一元素相同事件只能 on 绑定一个事件处理函数，新绑定的覆盖旧的。
 - relatedTarget 属性，对于 mouseover 记录鼠标从哪里来，对于 mouseout 记录鼠标去了哪里，
 - new Event 自定义事件
-- ```js
-  setTimeout(function() {
-    "use strict";
-    console.log(this); //Window
-  });
-  ```
+- 特例
+
+```js
+setTimeout(function() {
+  "use strict";
+  console.log(this); //Window
+});
+```
 
 ## 单线程的好处
 
