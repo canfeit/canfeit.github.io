@@ -54,6 +54,8 @@ Stack Overflow 创始人 Jeff Atwood 提出:
 | [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs) | 图像识别                                                                                                      | ![](https://img.shields.io/github/stars/justadudewhohacks/opencv4nodejs.svg) |
 | [jerryscript](https://github.com/pando-project/jerryscript)         | IoT 引擎                                                                                                      | ![](https://img.shields.io/github/stars/pando-project/jerryscript.svg)       |
 
+https://github.com/BrainJS/brain.js
+
 ## 中间层架构
 
 ### 前后端分离矛盾

@@ -1,3 +1,6 @@
+- 开发分支合并主分支:git merge --squash master(判断是否使用--squash 的原则:待合并分支上的历史是否有意义)
+- 主分支合并开发分支:git merge --no-ff dev，便于管理(—no-ff:no fast foward)
+
 ## 分支管理
 
 - 一键更新所有分支`git fetch`
@@ -45,10 +48,11 @@ git merge --no-ff upstream/master
 
 ## 撤销&清理
 
-- 撤销所有未暂存修改 `git checkout .`
-- 撤销所有已暂存修改 `git reset --hard`
+- 丢弃所有未暂存修改 `git checkout .`
+- 丢弃所有已暂存修改 `git reset --hard`
 - 清理未被 git 管理的文件 `git clean -xdf`
-- 丢弃上一次提交 `git reset --hard HEAD~1`
+- 撤销上一次提交 `git reset --soft HEAD~`
+- 丢弃上一次提交及后来的所有修改 `git reset --hard HEAD~`
 
 ## 标签管理
 
