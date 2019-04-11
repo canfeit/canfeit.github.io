@@ -1,6 +1,3 @@
-- 开发分支合并主分支:git merge --squash master(判断是否使用--squash 的原则:待合并分支上的历史是否有意义)
-- 主分支合并开发分支:git merge --no-ff dev，便于管理(—no-ff:no fast foward)
-
 ## 分支管理
 
 - 一键更新所有分支`git fetch`
@@ -42,7 +39,7 @@ git fetch upstream
 # 查看所有分支列表
 git branch -a
 # 合并源仓库更新到当前分支
-git merge --no-ff upstream/master
+git merge upstream/master
 # 向源仓库推送更新:在 github.com 发起 pull request
 ```
 
