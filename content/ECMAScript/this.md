@@ -76,3 +76,6 @@ var bar = {
 };
 bar.baz(); // equals (bar.baz)(); also bar
 ```
+
+例子(1,eval)里的）逗号操作符和(例子(eval=eval)里的)等号操作符-对它的操作数执行了 GetValue。因此，(1,eval)和(eval = eval)计算出一个值，而 eval 和 (eval)计算出的是一个引用。
+通过逗号表达式对它的操作数执行了 GetValue，让 this 的值指向了全局对象
