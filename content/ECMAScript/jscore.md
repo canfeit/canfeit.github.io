@@ -1,6 +1,6 @@
 js 基础
-es 演进
 执行栈与汇编语言
+https://cn.bing.com/search?q=%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80+%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B&qs=n&form=QBRE&sp=-1&pq=%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80+%E5%86%85%E5%AD%98mo%27xing&sc=0-14&sk=&cvid=C4455DFCD0A346918CC9ACF15DE5DAD2
 原型链与作用域链
 
 关于原型继承，请记住以下四点：
