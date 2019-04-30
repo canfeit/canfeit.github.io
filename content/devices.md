@@ -44,9 +44,9 @@ socat UNIX-LISTEN:/var/run/usbmuxd,mode=777,reuseaddr,fork TCP:远程ip:8555
 instruments -s devices
 ```
 
-##自启动脚本
+## 自启动脚本
 
-1. 在用户主目录新建 init.sh
+1. 在用户主目录新建:`touch ~/start.sh`
 
 ```bash
 adb start-server
@@ -54,5 +54,6 @@ socat TCP4-LISTEN:5037,reuseaddr,fork TCP4:127.0.0.1:5037 &
 socat TCP-LISTEN:8555,reuseaddr,fork UNIX-CONNECT:/var/run/usbmuxd &
 ```
 
-2. 默认打开方式改为[iterm2](https://www.iterm2.com/downloads.html)
-3. 在系统偏好设置--用户与群组，添加开机启动项
+2. 添加执行权限:`chmod 755 ~/start.sh`
+3. 默认打开方式改为[iterm2](https://www.iterm2.com/downloads.html)
+4. 在系统偏好设置--用户与群组，添加开机启动项
